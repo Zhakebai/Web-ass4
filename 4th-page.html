@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shop store</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="4th-page.css">
+        <link rel="icon" href="icon.png">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class = "navbar navbar-expand-lg navbar-light py-4 fixed-top">
+            <div class = "container">
+                <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                    <img src = "sun.png" alt = "site icon">
+            
+                </a>
+    
+                <div class = "order-lg-2 nav-btns">
+                    <button type = "button" class = "btn position-relative">
+                        <i class='bx bx-search' ></i>
+                    </button>
+                    <button type = "button" class = "btn position-relative">
+                        <i class='bx bx-user'></i>
+                    </button>
+                    <button type = "button" class = "btn position-relative">
+                        <i class='bx bx-heart' ></i>
+                    </button>
+                    <button type = "button" class = "btn position-relative" id="shoppingBagButton">
+                        <i class='bx bx-shopping-bag' ></i>
+                    </button>
+                </div>
+
+                <form action="" class="search-bar-container">
+                    <input type="search" id="search" placeholder="Type to search">
+                    <label for="search-bar" class='bx bx-search' ></label>
+                </form>
+    
+                <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+                    <span class = "navbar-toggler-icon"></span>
+                </button>
+    
+                <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+                    <ul class = "navbar-nav ml-auto text-center">
+                        <li class = "nav-item px-2 py-2">
+                            <a class = "nav-link " href = "http://127.0.0.1:5500/1st-page.html#">Home</a>
+                        </li>
+                        <li class = "nav-item px-2 py-2">
+                            <a class = "nav-link " href = "http://127.0.0.1:5500/2nd-page.html">Men</a>
+                        </li>
+                        <li class = "nav-item px-2 py-2">
+                            <a class = "nav-link " href = "http://127.0.0.1:5500/3rd-page.html">Women</a>
+                        </li>
+                        <li class = "nav-item px-2 py-2 border-0">
+                            <a class = "nav-link " href = "http://127.0.0.1:5500/4th-page.html"> About us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="loginForm">
+
+            <i class='bx bx-x' id="formClose"></i>
+
+            <form action="">
+                <h3>Login</h3>
+                <input type="email" class="box" placeholder="Enter your email">
+                <input type="password" class="box" placeholder="Enter your password">
+                <input type="submit" value="Sign in" class="btn">
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember me</label>
+                <p>Forget password? <a href="#">Click here</a></p>
+                <p>New custoemrs <a href="#">Register now</a></p>
+            </form>
+        </div>
+
+        <section class="home" id="home">
+            <div class="content">
+                <h3>Fashion is everywhere</h3>
+                <p>Feel yourself brighter with us</p>
+            </div>
+            <div class="controls">
+                <span class="vid-btn active" data-src="video1.mp4"></span>
+                <span class="vid-btn" data-src="video2.mp4"></span>
+                <span class="vid-btn" data-src="video3.mp4"></span>
+            </div>
+            <div class="video-container">
+                <video src="video1.mp4" id="video-slider" loop autoplay muted></video>
+            </div>
+        </section>
+
+        <section class="about-us">
+            <div class="content">
+                <h2>Our values</h2>
+                <p>Shared by all colleagues worldwide regardless of role, function, or brand, our values have been guiding and uniting us since 1947. They are integrated into our way of working – from our entrepreneurial spirit and long-term perspective to our constant drive to keep our customers at the heart of everything we do.
+
+                    By living our values, we create an open and down-to-earth culture where we can work together to do best what matters most to our customers and our future.</p>
+
+            </div>
+        </section>
+
+        
+
+        <footer id="footer" style="margin-top: 50px;">
+            <div class="top">
+                <div class="container">
+                    <div class="col">
+                       <div class="logo">
+                        <a href="./">SUN-<span class="logo">MOON</span></a>
+                       </div>
+                    <div class="description">
+                        <p>An incredible eye for what's next in fashion. A passionate drive to exceed expectations.We believe fashion is a business of optimism, and in that spirit we continue to grow and evolve.</p>
+                    </div>
+                    </div>
+        
+                    <div class="col">
+                        <div class="title">
+                            <h3>Customer Service</h3>
+                            <ul class="links">
+                                <li class="link"><a href="#Contact">Contact Us</a></li>
+                                <li class="link"><a href="#order">Order Status</a></li>
+                                <li class="link"><a href="#Shipping">Shipping</a></li>
+                                <li class="link"><a href="#return">Return Policy & Exchanges</a></li>
+                                <li class="link"><a href="#price">Price Adjustments</a></li>
+                                <li class="link"><a href="gift">Gift Cards</a></li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="col">
+                        <div class="title">
+                            <h3>Information</h3>
+                            <ul class="links">
+                                <li class="link"><a href="#">
+                                    <i class="fa fa-map-marker"></i>
+                                    <p>Kazakstan, Astana, Astana IT University</p>
+                                </a></li>
+                                <li class="link"><a href="#">
+                                    <i class="fa fa-clock-o"></i>
+                                    <p>Monday - Friday <br> 9AM-12PM </p>
+                                </a></li>
+                                <li class="link"><a href="#">
+                                    <i class="fa fa-phone"></i>
+                                    <p>+77478169888</p>
+                                </a></li>
+                                <li class="link"><a href="#">
+                                    <i class="fa fa-envelope-o"></i>
+                                    <p>sun_moon@gmail.com</p>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="col">
+                        <div class="title">
+                            <h3>About Us</h3>
+                            <ul class="links">
+                                <li class="link"><a href="brands">All Brands</a></li>
+                                <li class="link"><a href="careers">Careers</a></li>
+                                <li class="link"><a href="email">Get Email Updates</a></li>
+                                <li class="link"><a href="style">Free Style</a></li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        
+            <div class="copyright">
+                <p>&copy; 2023 <span>SUN-MOON.Web</span> All Rights Reserved</p>
+            </div>
+        </footer>
+
+
+        <script src="4th-page.js"></script>
+    </body>
+    
+</html>
