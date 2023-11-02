@@ -17,7 +17,29 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    </head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              $(".description").mouseover(function(){
+                $(".description").css("background-color", "whitesmoke");
+              });
+              $(".description").mouseout(function(){
+                $(".description").css("background-color", "white");
+              });
+            });
+            </script>
+
+            <script>
+                $(document).ready(function(){
+                  $(".search").keydown(function(){
+                    $(".search").css("background-color", "whitesmoke");
+                  });
+                  $(".search").keyup(function(){
+                    $(".search").css("background-color", "white");
+                  });
+                });
+                </script>
+            </head>
     <body>
         <nav class = "navbar navbar-expand-lg navbar-light py-4 fixed-top">
             <div class = "container">
