@@ -33,7 +33,7 @@ window.onscroll = () =>{
     searchBar.classList.remove('active');
 }
 
-searchButton.addEventListener('mouseover', () => {
+searchButton.addEventListener('click', () => {
     searchButton.classList.toggle('bx-search'); 
     searchButton.classList.toggle('bx-x'); 
     searchBar.classList.toggle('active');
@@ -100,3 +100,38 @@ cartAddButtons.forEach((button) => {
         addToShoppingBag(productName, productPrice);
     });
 });
+
+var modal = document.getElementById("modalPage");
+
+var img = document.getElementById("collectImg");
+var modalImg = document.getElementById("img1");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("closing")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+
+var modal = document.getElementById("modal");
+
+var img = document.getElementById("coltImg");
+var modalImg = document.getElementById("img2");
+var captionText = document.getElementById("capt");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("closeIt")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
