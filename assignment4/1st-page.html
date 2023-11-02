@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shop store</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="1st-page.css">
+        <link rel="icon" href="icon.png">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class = "navbar navbar-expand-lg navbar-light py-4 fixed-top">
+            <div class = "container">
+                <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                    <img src = "sun.png" alt = "site icon">
+            
+                </a>
+    
+                <div class = "order-lg-2 nav-btns">
+                    <button type = "button" class = "btn position-relative">
+                        <i class='bx bx-search' ></i>
+                    </button>
+                    <button type = "button" class = "btn position-relative">
+                        <i class='bx bx-user'></i>
+                    </button>
+                    <button type = "button" class = "btn position-relative">
+                        <i class='bx bx-heart' ></i>
+                    </button>
+                    <button type = "button" class = "btn position-relative" id="shoppingBagButton">
+                        <i class='bx bx-shopping-bag' ></i>
+                    </button>
+                </div>
+
+                <form action="" class="search-bar-container">
+                    <input type="search" id="search" placeholder="Type to search">
+                    <label for="search-bar" class='bx bx-search' ></label>
+                </form>
+    
+                <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+                    <span class = "navbar-toggler-icon"></span>
+                </button>
+    
+                <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+                    <ul class = "navbar-nav ml-auto text-center">
+                        <li class = "nav-item px-2 py-2">
+                            <a class = "nav-link " href = "http://127.0.0.1:5500/1st-page.html#">Home</a>
+                        </li>
+                        <li class = "nav-item px-2 py-2">
+                            <a class = "nav-link " href = "http://127.0.0.1:5500/2nd-page.html">Men</a>
+                        </li>
+                        <li class = "nav-item px-2 py-2">
+                            <a class = "nav-link " href = "http://127.0.0.1:5500/3rd-page.html">Women</a>
+                        </li>
+                        <li class = "nav-item px-2 py-2 border-0">
+                            <a class = "nav-link " href = "http://127.0.0.1:5500/4th-page.html"> About us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="loginForm">
+
+            <i class='bx bx-x' id="formClose"></i>
+
+            <form action="">
+                <h3>Login</h3>
+                <input type="email" class="box" placeholder="Enter your email">
+                <input type="password" class="box" placeholder="Enter your password">
+                <input type="submit" value="Sign in" class="btn">
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember me</label>
+                <p>Forget password? <a href="#">Click here</a></p>
+                <p>New custoemrs <a href="#">Register now</a></p>
+            </form>
+        </div>
+
+        <section class="home">
+            <div class="container">
+
+               <div class="information">
+                  <h1>The Key Autumn/Winter 2023 Trends To Know Now</h1>
+                  <p class="text">
+                     Whether you're excited for the beautiful colours of autumn, or you're not yet ready to say goodbye to summer, our hand-picked collection of cosy knitwear and practical outerwear makes the gradual transition into autumn a breeze.
+                  </p>
+                  <a href="#" class="btn btn-fill">Shop now</a>
+
+               </div>
+               
+            </div>
+         </section>
+      
+         <section class="autumnCollection">
+            <div class="collectionContainer">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="type">
+                            <div class="desc">
+                                <h3>Men's collection autumn/winter</h3>
+                                
+                                <a href="http://127.0.0.1:5500/2nd-page.html" class="btn btn-fill">Shop now</a>
+                                <a href="#" class="placeholder">
+                                    <img src="collection1.jpg" id="menImg" alt="Men" style="width:100%;max-width:500px">
+                                    <div id="modalPage" class="modal">
+                                        <span class="closing">&times;</span>
+                                        <img class="modal-content" id="img1">
+                                        <div id="caption"></div>
+                                      </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-6">
+                        <div class="type">
+                            <div class="desc">
+                                <h3>Women's collection autumn/winter</h3>
+                                
+                                <a href="http://127.0.0.1:5500/3rd-page.html" class="btn btn-fill">Shop now</a>
+                                <a href="#" class="placeholder">
+                                    <img src="fourth.jpg" alt="Women" id="womenImg" style="width:100%;max-width:500px">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        
+
+        <section class="aboutUs">
+            <div class="heading">
+                <h1>About Us</h1>
+            </div>
+
+            <div class="aboutContainer ">
+                <div class="aboutContent">
+                    <h2 class="title">
+                        Learn More <br>
+                        About Sun-Moon
+                    </h2>
+                    <p class="description">
+                        We are a global family of brands and businesses. 
+                        We make it possible for customers around the world to express themselves through fashion and design in a sustainable way.
+                    </p>
+                    <a href="http://127.0.0.1:5500/4th-page.html" class="button">
+                        Read more about our business <i class='bx bx-right-arrow-alt'></i>
+                    </a>
+                </div>
+                <div class="fashion-image">
+                    <img src="image1.jpg" alt="image" class="aboutImage">
+                </div>
+            </div>
+        </section>
+
+        <div class="name text-center">
+            <h2>Time to music</h2>
+        </div>
+        <div class="audio">
+            <audio id="audio">
+                <source src="fashion.mp3" type="audio/mpeg">
+            </audio>
+            <button id="playPauseBtn" onclick="playPause()">Play &#9658;</button>
+            <button id="stopBtn" onclick="stopAudio()">Stop &#9724; </button>
+        </div>
+        
+<section class="clothes">
+    <h2 class="heading"> Autumn <span>Hits</span></h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="women1.jpg" class="card-img-top fixed-size-image" alt="Coat">
+                        <h3 class="card-title">Coat</h3>
+                        <div class="price">$109.90</div>
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Cart-add"><i class="bx bx-cart-add"></i> </button>
+                            <button type="button" class="btn btn-secondary" title="heart"><i class="bx bx-heart"></i> </button>
+                            <button type="button" class="btn btn-secondary" title="Share"><i class="bx bx-share-alt"></i> </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="men1.jpg" class="card-img-top fixed-size-image" alt="Coat">
+                        <h3 class="card-title">Cardigan</h3>
+                        <div class="price">$41.90</div>
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Cart-add"><i class="bx bx-cart-add"></i> </button>
+                            <button type="button" class="btn btn-secondary" title="heart"><i class="bx bx-heart"></i> </button>
+                            <button type="button" class="btn btn-secondary" title="Share"><i class="bx bx-share-alt"></i> </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="women2.jpg" class="card-img-top fixed-size-image" alt="Coat">
+                        <h3 class="card-title">Cardigan</h3>
+                        <div class="price">$39.90</div>
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Cart-add"><i class="bx bx-cart-add"></i> </button>
+                            <button type="button" class="btn btn-secondary" title="heart"><i class="bx bx-heart"></i> </button>
+                            <button type="button" class="btn btn-secondary" title="Share"><i class="bx bx-share-alt"></i> </button>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="men2.jpg" class="card-img-top fixed-size-image" alt="Coat">
+                        <h3 class="card-title">Jacket</h3>
+                        <div class="price">$89.90</div>
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Cart-add"><i class="bx bx-cart-add"></i> </button>
+                            <button type="button" class="btn btn-secondary" title="heart"><i class="bx bx-heart"></i> </button>
+                            <button type="button" class="btn btn-secondary" title="Share"><i class="bx bx-share-alt"></i> </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card"> 
+                    <div class="card-body">
+                        <img src="women4.jpg" class="card-img-top fixed-size-image" alt="Coat">
+                        <h3 class="card-title">Women's two-piece</h3>
+                        <div class="price">$89.90</div>
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Cart-add"><i class="bx bx-cart-add"></i> </button>
+                            <button type="button" class="btn btn-secondary" title="heart"><i class="bx bx-heart"></i> </button>
+                            <button type="button" class="btn btn-secondary" title="Share"><i class="bx bx-share-alt"></i> </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="men4.jpg" class="card-img-top fixed-size-image" alt="Coat">
+                        <h3 class="card-title">Shirt</h3>
+                        <div class="price">$24.90</div>
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Cart-add"><i class="bx bx-cart-add"></i> </button>
+                            <button type="button" class="btn btn-secondary" title="heart"><i class="bx bx-heart"></i> </button>
+                            <button type="button" class="btn btn-secondary" title="Share"><i class="bx bx-share-alt"></i> </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="cartTab">
+            <h2>Shopping Bag</h2>
+            <div class="listCart">
+                <ul id="shoppingBagList"></ul>
+            </div>
+            <div class="btn">
+                <button class="close" id="closeCartTab">Close</button>
+                <button class="check">Check Out</button>
+            </div>
+        </div>
+
+    <div class="delivery">
+        <h4>About delivery</h4>
+        <p class="one"><em>&ast;Next day delivery is subject to stock, courier availability and courier area.  Order cut off times may vary.  For full exceptions please refer to our terms &amp; conditions.</em></p>
+        <hr>
+        <p class="two">&dagger;Nextunlimited costs £22.50 for a 12 month subscription. Exceptions apply. For more information please refer to the nextunlimited terms &amp; conditions.</p>
+    </div>
+
+    <div class="contact">
+        <h5>Our Social Networks</h5>
+        <br>
+        <div class="icons">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-pinterest"></a>
+        <a href="#" class="fa fa-youtube"></a>
+    </div>
+    </div>
+
+    <footer id="footer" style="margin-top: 50px;">
+        <div class="top">
+            <div class="container">
+                <div class="col">
+                   <div class="logo">
+                    <a href="./">SUN-<span class="logo">MOON</span></a>
+                   </div>
+                <div class="description">
+                    <p>An incredible eye for what's next in fashion. A passionate drive to exceed expectations.We believe fashion is a business of optimism, and in that spirit we continue to grow and evolve.</p>
+                </div>
+                </div>
+    
+                <div class="col">
+                    <div class="title">
+                        <h3>Customer Service</h3>
+                        <ul class="links">
+                            <li class="link"><a href="#Contact">Contact Us</a></li>
+                            <li class="link"><a href="#order">Order Status</a></li>
+                            <li class="link"><a href="#Shipping">Shipping</a></li>
+                            <li class="link"><a href="#return">Return Policy & Exchanges</a></li>
+                            <li class="link"><a href="#price">Price Adjustments</a></li>
+                            <li class="link"><a href="gift">Gift Cards</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="col">
+                    <div class="title">
+                        <h3>Information</h3>
+                        <ul class="links">
+                            <li class="link"><a href="#">
+                                <i class="fa fa-map-marker"></i>
+                                <p>Kazakstan, Astana, Astana IT University</p>
+                            </a></li>
+                            <li class="link"><a href="#">
+                                <i class="fa fa-clock-o"></i>
+                                <p>Monday - Friday <br> 9AM-12PM </p>
+                            </a></li>
+                            <li class="link"><a href="#">
+                                <i class="fa fa-phone"></i>
+                                <p>+77478169888</p>
+                            </a></li>
+                            <li class="link"><a href="#">
+                                <i class="fa fa-envelope-o"></i>
+                                <p>sun_moon@gmail.com</p>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="col">
+                    <div class="title">
+                        <h3>About Us</h3>
+                        <ul class="links">
+                            <li class="link"><a href="brands">All Brands</a></li>
+                            <li class="link"><a href="careers">Careers</a></li>
+                            <li class="link"><a href="email">Get Email Updates</a></li>
+                            <li class="link"><a href="style">Free Style</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    
+        <div class="copyright">
+            <p>&copy; 2023 <span>SUN-MOON.Web</span> All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="1st-page.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    </body>
+</html>
